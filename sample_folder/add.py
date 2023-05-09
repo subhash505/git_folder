@@ -5,5 +5,5 @@ result= a+b
 print(result)
 def add():
     
-    result= a+b
+    
     print(result)
