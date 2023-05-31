@@ -5,4 +5,4 @@ CREATE TABLE Persons (
     Address varchar(255),
     City varchar(255)
 );
-select * from Person
+select * from Person;
