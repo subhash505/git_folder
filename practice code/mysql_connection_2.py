@@ -11,6 +11,7 @@ for driver in pyodbc.drivers():
         myDriver = driver
 
 print(myDriver)
+
 # # define our connection string
 # conn_str = (r'DRIVER={'+ myDriver +'};'
 #             r'DBQ=C:\Users\SubhashSharma\Desktop\trade\source_1_trade_2.xlsx;'
