@@ -33,6 +33,8 @@ def main():
     count_5 = sum(map(lambda x: x == 5, inp_list))
     if count_5==count3 and count_19==count2:
         print("TRUE")
+    else:
+        print("FALSE")
     
 if __name__=="__main__":
     main()
