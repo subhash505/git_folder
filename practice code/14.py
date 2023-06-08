@@ -13,12 +13,21 @@ Input:
 Output:
 True
 """
+# importing the module
+import tracemalloc
 import pandas as pd
 import numpy as np
+import time
+
+
+
+# print(23*2.3)
+
 
 def main():
-    inp_list=[int(x) for x in input().split()]
+    inp_list=[int(x) for x in input().split(',')]
  
+    start = time.time()
     count_19=0
     count_5=0
     count2=2
@@ -36,5 +45,31 @@ def main():
     else:
         print("FALSE")
     
+    end = time.time()
+    print(end - start)
+    
 if __name__=="__main__":
     main()
+
+"""
+
+
+ 
+# code or function for which memory
+# has to be monitored
+def app():
+    lt = []
+    for i in range(0, 100000):
+        lt.append(i)
+ 
+# starting the monitoring
+tracemalloc.start()
+ 
+# function call
+app()
+ 
+# displaying the memory
+print(tracemalloc.get_traced_memory())
+ 
+# stopping the library
+tracemalloc.stop()"""
