@@ -19,15 +19,18 @@ Output:
 """
 import pandas as pd
 import numpy as np
-# from memory_profiler import profile
+from memory_profiler import profile
+from pympler import summary
 
-# @profile
+@profile
 def main():
     input_1=int(input())
     len1=input_1
     last_term=input_1+(len1-1)*2
     #[(lambda x: x*x)(x) for x in range(10)]
     list1=[x for x in range(input_1,last_term+1,2)]
+    suysah = summary.summarize(list1)
+    summary.print_(suysah)
     # list2=list(map(lambda x : x+2 , range(input_1-2,last_term+1) ))
     #input_1 = int(input())
     # len1 = input_1
@@ -46,3 +49,4 @@ def main():
 
 
 if __name__ == "__main__":
+    main()
