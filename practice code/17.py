@@ -13,8 +13,8 @@ Input: 3
 Output:
 [3, 5, 7]
 Input: 17
-Output:
 [17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49]
+Output:
 
 """
 import pandas as pd
